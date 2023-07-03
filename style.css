@@ -171,13 +171,20 @@ footer li{
 
 }
 
+.close-mobile-nav{
+    display: none;
+}
 
-@media only screen and (max-width: 912px){
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width: 913px){
 
     nav{
         display: flex;
         padding: 0px 5px;
-        font-size: 16px;
+        font-size: small;
     }
 
     .hero-section h2{
@@ -249,6 +256,107 @@ footer li{
         margin-left: auto;
         margin-top: 7px;
         margin-right: 20px;
+        border: 1px solid white;
+        margin-left: auto;
+        background-color: white;
+        display: none;
+        box-shadow: 2px black;
+
+    }
+
+    .display-nav{
+        margin-left: auto;
+        margin-top: 7px;
+        margin-right: 20px;
+        border: 1px solid white;
+        margin-left: auto;
+        background-color: white;
+        box-shadow: 2px black;
+        display: block;
+        opacity: 1;
+    }
+
+    /* .display-nav:hover{
+        opacity: 1;
+    } */
+
+    .remove-trigger{
+        display: none;
+    }
+
+    .display-nav > ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .display-nav > ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .display-nav > ul li a:hover{
+        color: darkgrey;
+    }
+
+    .display-nav > ul li {
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+    .actual-nav > ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .actual-nav > ul li a{
+        color: black;
+    }
+
+    .actual-nav > ul li {
+        margin-bottom: 15px;
+    }
+
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main{
+        margin-top: -120px;
+    }
+
+    .close-mobile-nav{
+        display: block;
+        padding-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        float: right;
+        color: black;
+    }
+
+    .menu{
+        display: block;
+        height: 150px;
+        margin-left: auto;
+        margin-right: 25px;
+    }
+
+    .trigger{
+        cursor: pointer;
+        display: block;
+    }
+
+    .trigger:hover{
+        color: darkgray;
     }
 }
     
