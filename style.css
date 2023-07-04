@@ -118,6 +118,7 @@ nav{
 }
 
 #portfolio li{
+    margin-bottom: 20px;
     list-style-type: none;
 }
 
@@ -128,7 +129,8 @@ nav{
 
 #pictures img{
     height: 350px;
-    width: 310px;
+    aspect-ratio: 4/3;
+    width: 60%;
 }
 
 #pictures{
@@ -173,6 +175,11 @@ footer li{
 
 .close-mobile-nav{
     display: none;
+}
+
+#portfolio > ul li a{
+    color: blue;
+    text-decoration: none;
 }
 
 .menu{
@@ -293,6 +300,11 @@ footer li{
 
     .display-nav > ul li a{
         color: black;
+        text-decoration: none;
+    }
+
+    #portfolio > ul li a{
+        color: white;
         text-decoration: none;
     }
 
